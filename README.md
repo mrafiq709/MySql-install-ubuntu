@@ -24,5 +24,23 @@ Start MySaql Server:
 Log into mysql:
 ----------------
     /usr/bin/mysql -u root -p
+    
+How to Create a New User:
+--------------------------
+To create a new MySQL user account, run the following command:
+
+    CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+    
+To grant access from another host, change the hostname part (localhost) with the remote machine IP. For example, to grant access from a machine with IP 10.8.0.5 you would run:
+
+    CREATE USER 'newuser'@'10.8.0.5' IDENTIFIED BY 'user_password';
+    
+To create a user that can connect from any host, use the '%' wildcard as a host part:
+    
+    CREATE USER 'newuser'@'%' IDENTIFIED BY 'user_password';
+
+Grand all privileges to a user account on all databases:
+
+    GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 
 References: https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
