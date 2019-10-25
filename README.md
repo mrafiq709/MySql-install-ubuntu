@@ -43,4 +43,7 @@ Grand all privileges to a user account on all databases:
 
     GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 
-References: https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+References:
+-------------
+https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+https://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/
