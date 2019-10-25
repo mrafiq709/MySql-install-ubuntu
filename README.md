@@ -46,4 +46,5 @@ Grand all privileges to a user account on all databases:
 References:
 -------------
 https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+
 https://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/
