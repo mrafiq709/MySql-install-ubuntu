@@ -25,7 +25,7 @@ Log into mysql:
 ----------------
     /usr/bin/mysql -u root -p
     or
-    sudo mysql // root user
+    sudo mysql //for login as root user
     
 Change root password:
 -----------------------
