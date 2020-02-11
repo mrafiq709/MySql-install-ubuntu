@@ -24,6 +24,14 @@ Start MySaql Server:
 Log into mysql:
 ----------------
     /usr/bin/mysql -u root -p
+    or
+    sudo mysql // root user
+    
+Change root password:
+-----------------------
+    SELECT user,authentication_string,plugin,host FROM mysql.user;
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new-password';
+    FLUSH PRIVILEGES;
     
 How to Create a New User:
 --------------------------
@@ -42,6 +50,7 @@ To create a user that can connect from any host, use the '%' wildcard as a host 
 Grand all privileges to a user account on all databases:
 
     GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+    FLUSH PRIVILEGES;
 
 References:
 -------------
