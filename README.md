@@ -51,6 +51,12 @@ Grand all privileges to a user account on all databases:
 
     GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
     FLUSH PRIVILEGES;
+    
+import sql
+-----------
+```
+mysqldump -uroot -p db_name > db.sql
+```
 
 References:
 -------------
